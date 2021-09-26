@@ -5,7 +5,7 @@
 #include <opencv2/videoio.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
-//#include "uart.h"
+#include "uart.h"
 #include <unistd.h>
 
 using namespace std;
@@ -68,7 +68,7 @@ int main()
   int flip_method = 0;
   int x, y;
 
-dw  string pipeline = gstreamer_pipeline(capture_width,
+ string pipeline = gstreamer_pipeline(capture_width,
                                        capture_height,
                                        display_width,
                                        display_height,
